@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int i=0;
+	char arr[6]={0};
+	for(i;i<3;i++)
+	{
+	printf("请输入密码\n");
+	scanf("%s",arr);
+	if(strcmp(arr,"123456")==0)
+	{
+		printf("密码正确\n");
+		break;
+	}
+	}
+	if(i==3)
+		printf("三次密码均输入错误,退出程序\n");
+	return 0;
+}
