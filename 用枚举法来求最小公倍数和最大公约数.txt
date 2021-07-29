@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+	int x,y,i,pa,pb;
+	printf("请输入你想输入的数\n");
+	scanf("%d %d",&x,&y);
+	for(pa=x;i>0;i--)
+	{
+		if(x%pa==0&&y%pa==0)
+			break;
+	}
+	for(pb=y;pb<=x*y;pb++)
+	{
+		if(pb%x==0&&pb%y==0)
+			break;
+	}
+	printf("最大公约数为%d\n",pa);
+	printf("最小公倍数为%d\n",pb);
+	return 0;
+}
