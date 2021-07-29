@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+	int x;
+	int y=0;
+	printf("请随机输入一个数\n");
+	scanf("%d",&x);
+	int m=x;
+	do
+	{
+		y=y*10+x%10;
+	}while(x/=10);
+	/*do
+	{
+		y=x%10;
+		sum=sum*10+y;
+		x=x/10;
+	}while(x);*/
+	if(y==m)
+		printf("该数是回文数\n");
+	else
+		printf("不是回文数\n");
+	return 0;
+}
