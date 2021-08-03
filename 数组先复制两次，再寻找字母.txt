@@ -1,0 +1,49 @@
+#include<stdio.h>
+#include<string.h>
+1.
+int main()
+{
+	char st1[11],st2[22],chx;
+	int i=0,t=0;
+	printf("input strlen\n");
+	gets(st1);
+	printf("input \n");
+	chx=getchar();
+	strcpy(st2,st1);
+	strcat(st2,st1);
+	for(i;st2[i]!='\0';i++)
+	{
+		if(st2[i]==chx)
+			t++;
+	}
+	printf("%s",st2);
+	printf("happen %d\n",t);
+	return 0;
+}
+2.
+int main()
+{
+	char st1[50],st2[50],chx;
+	int i=0,j=0;
+	printf("请输入一段字符串\n");
+	scanf("%s",st1);
+	getchar();
+	for(i=0;st1[i]!='\0';i++)
+	{
+		st2[i]=st1[i];
+	}
+	for(j=0;st1[j]!='\0';j++)
+	{
+		st2[i++]=st1[j];
+	}
+	st2[i]='\0';
+	printf("%s\n",st2);
+	chx=getchar();
+	for(i=0,j=0;st2[i]!='\0';i++)
+	{
+		if(chx==st2[i])
+			j++;
+	}
+	printf("%d\n",j);
+	return 0;
+}
